@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/src/assets/js/chunk-5fc1089b.7a5c32c0.js"
   },
   {
-    "revision": "3d1968046912e9555ebe",
+    "revision": "ab875a8100410fbda4c4",
     "url": "/src/assets/css/app~672e4923.0a512410.css"
   },
   {
@@ -124,12 +124,12 @@ self.__precacheManifest = [
     "url": "/src/assets/js/chunk-3252e03d.74c1e761.js"
   },
   {
-    "revision": "707ab5e7cb7c0e34feab",
+    "revision": "b06c16fddac293cd717e",
     "url": "/src/assets/css/chunk-37c706ca.fa64f13d.css"
   },
   {
-    "revision": "707ab5e7cb7c0e34feab",
-    "url": "/src/assets/js/chunk-37c706ca.fc44682b.js"
+    "revision": "b06c16fddac293cd717e",
+    "url": "/src/assets/js/chunk-37c706ca.139aa837.js"
   },
   {
     "revision": "436ec5be03d0d0c25107",
@@ -192,8 +192,8 @@ self.__precacheManifest = [
     "url": "/src/assets/css/chunk-5fc1089b.029656d6.css"
   },
   {
-    "revision": "3d1968046912e9555ebe",
-    "url": "/src/assets/js/app~672e4923.c29eeb9d.js"
+    "revision": "ab875a8100410fbda4c4",
+    "url": "/src/assets/js/app~672e4923.a7f530f2.js"
   },
   {
     "revision": "09185af7671dddac19f1",
@@ -308,6 +308,10 @@ self.__precacheManifest = [
     "url": "/src/assets/fonts/Merriweather-Regular.a60e92b7.woff"
   },
   {
+    "revision": "501bfe04f2cc41ecca2f003c9c2f507f",
+    "url": "/src/assets/fonts/Merriweather-Bold.501bfe04.ttf"
+  },
+  {
     "revision": "1565f7c2085e3a5baa4edac1e4696ea1",
     "url": "/src/assets/fonts/Merriweather-Bold.1565f7c2.woff"
   },
@@ -318,10 +322,6 @@ self.__precacheManifest = [
   {
     "revision": "f04f9a651d5fb9c0ca98549c336b5191",
     "url": "/src/assets/fonts/Merriweather-Regular.f04f9a65.ttf"
-  },
-  {
-    "revision": "501bfe04f2cc41ecca2f003c9c2f507f",
-    "url": "/src/assets/fonts/Merriweather-Bold.501bfe04.ttf"
   },
   {
     "revision": "7a7b3c03216f6527ce14d9c51972e32b",
@@ -384,7 +384,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "1e09ba4d64e95aa54ac1fd09abfc8069",
+    "revision": "3ce7b5e7eb744a8e811297f884fca325",
     "url": "/index.html"
   }
 ];
