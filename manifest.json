@@ -1,6 +1,6 @@
 {
-  "name": "Особистий сайт Юрій Колцьо",
-  "short_name": "YKS",
+  "name": "YKSite",
+  "short_name": "YKSite",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -16,5 +16,5 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "theme_color": "#2c3e50"
 }
