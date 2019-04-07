@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/src/assets/js/app~d0ae3f07.3251856a.js"
   },
   {
-    "revision": "ea882431f0a2d13b8de6",
-    "url": "/src/assets/js/app~f71cff67.d69c294f.js"
+    "revision": "02e84d9311dfe46c8b85",
+    "url": "/src/assets/js/app~f71cff67.62ad5c83.js"
   },
   {
     "revision": "e1acc7ae8760015a1cb1",
@@ -260,7 +260,7 @@ self.__precacheManifest = [
     "url": "/src/assets/img/home-solid.f92a1c04.svg"
   },
   {
-    "revision": "21222e4f43a72db9890a91f88cd3b68d",
+    "revision": "a0682c89d7c443fecfba6e3641a8e481",
     "url": "/index.html"
   },
   {
