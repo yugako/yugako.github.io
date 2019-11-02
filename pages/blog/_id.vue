@@ -9,7 +9,7 @@
       </div>
      
       <div class="blog-single__content" v-html="$md.render(article.body)"></div>
-     
+      <vue-disqus shortname="personal-12" :identifier="article.id" :url="currentUrl"></vue-disqus>
     </div>
   </article>
 </template>
@@ -27,8 +27,12 @@
         return {
           article: await require(`~/assets/content/blog/${params.id}.json`),
         };
-      } 
-        
+      }   
+    },
+    data() {
+      return {
+        currentUrl: window.location.href,
+      }
     },
   }
 </script>

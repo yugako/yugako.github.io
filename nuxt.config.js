@@ -1,5 +1,3 @@
-const config = require('./contentful.json');
-
 module.exports = {
   /*
   ** Headers of the page
@@ -20,11 +18,7 @@ module.exports = {
 
     ]
   },
-  env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
-    CTF_ENVIRONMENT: config.CTF_ENVIRONMENT
-  },
+  
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/markdownit'
@@ -40,6 +34,7 @@ module.exports = {
   },
   plugins: [
     '~plugins/vue-typed',
+    '~plugins/disqus',
   ],
   /*
   ** Customize the progress bar color
