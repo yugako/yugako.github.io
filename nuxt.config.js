@@ -27,44 +27,12 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-fire'
+    '@nuxtjs/markdownit'
   ],
-  fire: {
-     useOnly: [
-      'auth',
-      'firestore',
-      'functions',
-      'storage',
-      'realtimeDb',
-      'performance',
-      'remoteConfig'
-    ],
-    config: {
-      development: {
-        apiKey: "AIzaSyAbHEpHDaTm0ed3czwebEbQs1cwNcwlpn0",
-        authDomain: "portfolio-11879.firebaseapp.com",
-        databaseURL: "https://portfolio-11879.firebaseio.com",
-        projectId: "portfolio-11879",
-        storageBucket: "portfolio-11879.appspot.com",
-        messagingSenderId: "165637758076",
-        appId: "1:165637758076:web:db81fc148e834097d5bdf9"
-
-
-      },
-      production: {
-        apiKey: "AIzaSyAbHEpHDaTm0ed3czwebEbQs1cwNcwlpn0",
-        authDomain: "portfolio-11879.firebaseapp.com",
-        databaseURL: "https://portfolio-11879.firebaseio.com",
-        projectId: "portfolio-11879",
-        storageBucket: "portfolio-11879.appspot.com",
-        messagingSenderId: "165637758076",
-        appId: "1:165637758076:web:db81fc148e834097d5bdf9"
-
-
-      }
-    }
-    
+  markdownit: {
+    injected: true,
   },
+ 
   styleResources: {
       scss: [
           '@/assets/scss/global.scss',
@@ -77,6 +45,20 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  /*
+  ** Generate configuration
+  */
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      return fs.readdirSync('./assets/content/blog').map(file => {
+        return {
+          route: `/blog/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+          payload: require(`./assets/content/blog/${file}`),
+        };
+      });
+    },
+  },
   /*
   ** Build configuration
   */

@@ -1,21 +1,21 @@
 <template>
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-4" v-for='navItem in pages' :key='navItem.fields.slug.trim()'>
+			<div class="col-12 col-sm-6 col-lg-4" v-for='article in blogPosts' :key='article.title'>
 				<article class="article">
-				 	<div class="article-img" :style="{backgroundImage: `url(${navItem.fields.image.fields.file.url})`}"></div>
+				 	<!-- <div class="article-img" :style="{backgroundImage: `url(${navItem.fields.image.fields.file.url})`}"></div> -->
 
 				 	<h4 class="article-title">
 				 		<nuxt-link 
-				 			:to="'/blog/' + navItem.fields.slug.trim()" 
+				 			:to="'/blog/' + article.slug" 
 				 			role="menuitem"
 				 		>
-				 			{{navItem.fields.heading}}
+				 			{{article.title}}
 				 		</nuxt-link>
 				 	</h4>
 			      	
 				    <g-button 
-				      	:link="'/blog/' + navItem.fields.slug.trim()"
+				      	:link="'/blog/' + article.slug"
 				      	text='Read More'
 				      	role="menuitem"
 				    />
@@ -34,7 +34,12 @@
         props: ['pages'],
         components: {
         	GButton
-        }
+        },
+         computed: {
+		    blogPosts() {
+		      return this.$store.state.blogPosts;
+		    },
+		},
     }
 </script>
 <style lang="scss">
