@@ -1,0 +1,98 @@
+// Colors
+$dark: #000;
+$accent: #1dbe6f;
+// $accent: #018aac;
+$white: #fff;
+$light: #d6d7d6;
+$text-color: #5c5c5c;
+
+// Fonts
+$primary-font: 'Oswald', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+* {
+	padding: 0;
+	margin: 0;
+	transition: all 0.3s;
+}
+
+::root {
+	font-size: 16px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba($dark, 0.3);
+	background-color: $accent;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	background-color: $accent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $dark;
+}
+::selection {
+	background-color: $accent;
+	color: $white;
+}
+
+html, body {
+	overflow-x: hidden!important;
+	font-family: $primary-font;
+
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+a {
+	&:active, &:focus {
+		outline: none;
+	}
+}
+.img-fluid {
+	width: 100%;
+	height: auto;
+}
+
+/* Transition animations */
+
+.slide-fade-enter-active {
+  transition: all 1.5s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 1.5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter {
+	transform: translateX(-100%);
+}
+ .slide-fade-leave {
+ 	transform: translateX(100%);
+}
+
+
+@mixin lg-size-max {
+	@media (max-width: 1199px) {
+		@content;
+	}
+}
+@mixin md-size-max {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin sm-size-max {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin xs-size-max {
+	@media (max-width: 576px) {
+		@content;
+	}
+}

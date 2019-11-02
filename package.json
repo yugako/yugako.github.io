@@ -1,0 +1,32 @@
+{
+  "name": "personal-nuxt",
+  "version": "1.0.0",
+  "description": "Personal website builded by nuxt",
+  "author": "G.G",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "contentful": "^7.10.0",
+    "firebase": "^7.2.1",
+    "nuxt": "^2.0.0",
+    "nuxt-fire": "^2.3.0",
+    "vue-typed-js": "^0.1.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
+  }
+}
