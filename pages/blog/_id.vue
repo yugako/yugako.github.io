@@ -93,6 +93,8 @@
           background-color: $dark;
           color: $accent;
           padding: 10px;
+          width: 100%;
+          overflow-x: auto;
         }
         
       }
