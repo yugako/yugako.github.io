@@ -1,6 +1,6 @@
 <template>
   <article class="blog-single">
-    <!-- <div class="blog-single__img" :style='{backgroundImage: `url(${page.fields.image.fields.file.url})`}'></div> -->
+    <div class="blog-single__img" :style='{backgroundImage: `url(${article.thumbnail})`}'></div>
     <div class="container page-component">
       <a @click="$router.go(-1)">Go back to overview</a>
       <div class="blog-single__header">
@@ -66,6 +66,8 @@
         p {
             color: $white;
             font-family: $secondary-font;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
             &:first-child {
               &::first-letter {
                 font-size: 40px;
@@ -86,6 +88,7 @@
         pre {
           background-color: $dark;
           color: $accent;
+          padding: 10px;
         }
         
       }
