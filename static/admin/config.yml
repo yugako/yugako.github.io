@@ -20,3 +20,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'portfolio'
+    label: 'Portfolio'
+    folder: 'assets/content/portfolio'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
