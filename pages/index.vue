@@ -17,6 +17,11 @@ import GButton from '@/components/elements/GButton.vue';
 
 export default {
     name: '',
+    head() {
+      return {
+        script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      };
+    },
     data() {
       return {
         
