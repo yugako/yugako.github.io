@@ -35,7 +35,7 @@
         components: {
         	GButton
         },
-         computed: {
+        computed: {
 		    blogPosts() {
 		      return this.$store.state.blogPosts;
 		    },
