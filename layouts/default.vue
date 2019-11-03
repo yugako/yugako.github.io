@@ -1,7 +1,10 @@
 <template>
   <div class="app">
     <!-- Toolbar -->
-    <Toolbar v-if='IsMenuOpened' />
+    <transition name='slide-fade'>
+       <Toolbar v-if='IsMenuOpened' />
+    </transition>
+
     <!-- Content view -->
     <transition name='slide-fade'>
        <nuxt class='app-view' :class='{"toolbar-active": IsToolbar}' />

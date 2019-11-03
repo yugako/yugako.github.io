@@ -1,7 +1,5 @@
 <template>
     <div class="toolbar-opener" :class='{"menu-active": IsMenuOpened}' >
-        <!-- <i v-if='!IsMenuOpened' class="fas fa-bars"></i>
-        <i v-else class="fas fa-times"></i> -->
         <input type="checkbox" @click='menuOpen' checked='true' id="checkbox2" class="checkbox2 visuallyHidden">
         <label for="checkbox2">
             <div class="hamburger hamburger2">
