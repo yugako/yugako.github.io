@@ -60,22 +60,16 @@ a {
 
 /* Transition animations */
 
-.slide-fade-enter-active {
-  transition: all 0.5s ease;
-}
-
-.slide-fade-leave-active {
-  transition: all 0.5s ease;
-}
-
 .slide-fade-enter {
 	transform: translateX(-100%);
+	transition: all 0.5s ease;
 }
  .slide-fade-leave {
  	transform: translateX(100%);
+ 	transition: all 0.5s ease;
 }
 
-
+/* Mixins */
 @mixin lg-size-max {
 	@media (max-width: 1199px) {
 		@content;
