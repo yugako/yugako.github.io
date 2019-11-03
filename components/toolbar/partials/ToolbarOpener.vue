@@ -51,8 +51,10 @@
 	      	font-size: 2rem;
 	      	text-align: center;
 	      	z-index: 99;
+	      	border-radius: 50%;
 	      	&.menu-active {
 	          	left: 75px;
+	          	border-radius: 0%;
 	      	}
 	      	@include sm-size-max {
 	          	display: block;
