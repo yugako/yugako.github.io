@@ -9,7 +9,8 @@
       </div>
      
       <div class="blog-single__content" v-html="$md.render(article.body)"></div>
-      <vue-disqus shortname="personal-12" :identifier="article.id" :url="currentUrl"></vue-disqus>
+      <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus>
+      {{id}}
     </div>
   </article>
 </template>
@@ -18,22 +19,18 @@
 
   export default {
     name: 'index',
-     async asyncData({ params, payload }) {
-      if (payload) {
-        return { article: payload };
-      } 
-      else {
-        console.log(params);
+    async asyncData({ params, payload }) {
+      if (payload) return { article: payload };
+      else
         return {
           article: await require(`~/assets/content/blog/${params.id}.json`),
         };
-      }   
-    },
+      },
     data() {
       return {
-        currentUrl: window.location.href,
+        id: this.$route.params.id,
       }
-    },
+    }
   }
 </script>
 <style lang='scss'>
