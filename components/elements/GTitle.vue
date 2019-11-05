@@ -16,6 +16,12 @@
 		font-size: 35px;
 		text-align: center;
 		position: relative;
+		@include md-size-max {
+			font-size: 30px;
+		}
+		@include sm-size-max {
+			font-size: 28px;
+		}
 		&::before {
 			content: '';
 			position: absolute;

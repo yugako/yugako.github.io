@@ -46,6 +46,7 @@
 	      	top: 0;
 	      	left: 0px;
 	      	color: $white;
+	      	border: 1px solid $accent;
 	      	font-size: 2rem;
 	      	text-align: center;
 	      	z-index: 99;
@@ -69,13 +70,13 @@
 
 	      	.hamburger {
 	      	    margin: 0 auto;
-	      	    margin-top: 5px;
-	      	    width: 30px;
-	      	    height: 30px;
+	      	    margin-top: 10px;
+	      	    width: 25px;
+	      	    height: 20px;
 	      	    position: relative;
 	      	    .bar {
 	      	    	padding: 0;
-	      	    	width: 30px;
+	      	    	width: 25px;
 	      	    	height: 4px;
 	      	    	background-color: $accent;
 	      	    	display: block;
@@ -89,7 +90,7 @@
 
 		      	.bar2,
 		      	.bar3 {
-		      	    top: 13.5px;
+		      	    top: 7.5px;
 		      	}
 
 		      	.bar3 {

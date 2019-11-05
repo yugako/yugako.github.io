@@ -1,13 +1,12 @@
 <template>
  	<div class="about-person">
- 		<div class="container">
- 			<div class="row align-items-center">
- 				<div class="col-12 col-lg-3">
+ 		<div class="row align-items-center">
+ 				<div class="col-12 col-md-4 col-xl-3">
  					<div class="about-person__photo">
  						<img class="img-fluid" src="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.0-9/70062120_1080218812148837_2300144141662683136_n.jpg?_nc_cat=108&_nc_oc=AQmra2Tc2a1ySBn85D1c8Rlugyin-5yryJKqudTt_roxfc6WGB5YnrUp0la1Ga6lNzU&_nc_ht=scontent.flwo3-1.fna&oh=21740a93001b7821c4b560998b3c56ed&oe=5E216312" alt='GG'>
  					</div>
  				</div>
- 				<div class="col-12 col-lg-9">
+ 				<div class="col-12 col-md-8 col-xl-9">
  					<h4 class="about-person__name">
  						George Gasyuk
  					</h4>
@@ -24,8 +23,8 @@
 					</div>
  				</div>
  			</div>
- 			<div class="row align-items-center justify-content-center mt-4">
- 				<div class="col-12 col-md-6 col-lg-3" v-for='feature in features' :key='feature.title'>
+ 			<div class="row align-items-center justify-content-center mt-sm-0 mt-md-4">
+ 				<div class="column col-12 col-sm-6 col-lg-3" v-for='feature in features' :key='feature.title'>
  					<div class="about-person__feature">
  						<i :class="feature.icon"></i>
                  		<div class="about-person__feature-desc">
@@ -34,11 +33,10 @@
                         </div>
  					</div>
  				</div>
- 				<div class="col-12 col-md-6 col-lg-3">
+ 				<div class="column col-12 col-sm-6 col-lg-3">
  					<g-button external='#' text='Download CV' />
  				</div>
  			</div>
- 		</div>
  	</div>
 </template>
 <script>
@@ -82,21 +80,37 @@
 			transition: all .3s ease-in-out;
 			border-radius: 10px;
 			margin-bottom: 105px;
+			@include md-size-max {
+				margin-bottom: 40px;
+				padding-bottom: 40px;
+				.column {
+					margin-top: 20px;
+					@include sm-size-max {
+						&:first-child {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+			
 			&__photo {
 				img {
 					border-radius: 50%;
 					object-fit: cover;
 					object-position: center;
-					@include lg-size-max {
-						width: 300px;
-						height: 300px;
-						margin: auto;
-						display: block;
-						margin-bottom: 30px;
-					}
+					// @include md-size-max {
+					// 	width: 300px;
+					// 	height: 300px;
+					// 	margin: auto;
+					// 	display: block;
+					// 	margin-bottom: 30px;
+					// }
 					@include sm-size-max {
-						width: 150px;
-						height: 150px;
+						width: 200px;
+						height: 200px;
+						display: block;
+						margin: auto;
+						margin-bottom: 20px;
 					}
 				}
 				
@@ -129,9 +143,7 @@
 			}
 			&__feature {
 				display: flex;
-				@include md-size-max {
-					margin-bottom: 20px;
-				}
+
 				i {
 					display: flex;
 				    float: left;

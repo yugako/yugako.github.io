@@ -45,7 +45,7 @@
 <style lang="scss">
 	.article {
 		position: relative;
-		padding: 0 20px 20px;
+		padding: 0 20px 40px;
 		margin-bottom: 50px;
 		background-color: rgba(0, 0, 0, .5);
 		-webkit-transition: all .3s ease-in-out;

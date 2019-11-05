@@ -4,9 +4,9 @@
         <a href="#" @click.prevent='prevPost'>
           <i class="fas fa-long-arrow-alt-left"></i>
         </a>
-        <a @click="$router.go(-1)">
+        <nuxt-link to='/blog'>
           <i class="fas fa-bars"></i>
-        </a>
+        </nuxt-link>
         <a href="#" @click.prevent='nextPost'>
           <i class="fas fa-long-arrow-alt-right"></i>
         </a>
@@ -105,20 +105,40 @@
       }
     }
     &__img {
-      padding-top: 25%;
+      padding-top: 30%;
       background-size: cover;
       background-position: center;
       width: 100%;
+      @include md-size-max {
+        padding-top: 40%;
+      }
+      @include sm-size-max {
+        padding-top: 50%;
+      }
     }
     &__header {
       padding-top: 70px;
-      padding-bottom: 100px;
+      padding-bottom: 70px;
+      @include md-size-max {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      @include sm-size-max {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
        text-align: center;
       &-title {
         font-size: 40px;
         text-transform: uppercase;
         margin-bottom: 15px;
         color: $white;
+        @include md-size-max {
+          font-size: 35px;
+        }
+        @include sm-size-max {
+          font-size: 30px;
+        }
       }
       &-date {
         color: $white;
@@ -151,6 +171,8 @@
         img {
           width: 100%;
           height: auto;
+          max-height: 400px;
+          object-fit: contain;
         }
 
         pre {
@@ -159,6 +181,13 @@
           padding: 10px;
           width: 100%;
           overflow-x: auto;
+          code {
+            font-style: monospace;
+          }
+        }
+
+        a {
+          color: $accent;
         }
     }
   }

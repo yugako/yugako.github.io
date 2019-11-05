@@ -25,9 +25,18 @@
     background-color: #0e0f10;
     &-articles {
       margin-top: 110px;
+      @include md-size-max {
+        margin-top: 80px;
+      }
+      @include md-size-max {
+        margin-top: 70px;
+      }
     }
     &-title {
       margin-top: 60px;
+      @include md-size-max {
+        margin-top: 30px;
+      }
     }
   }
 </style>

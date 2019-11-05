@@ -39,6 +39,10 @@
 		&-title:first-child {
 		  margin-top: 60px;
 		  margin-bottom: 110px;
+		  @include md-size-max {
+		  	margin-top: 40px;
+		  	margin-bottom: 80px;
+		  }
 		}
 
 	

@@ -1,17 +1,15 @@
 <template>
 	<div class="about-interests">
- 		<div class="container">
- 			<div class="row">
- 				<div class="col-12 col-sm-6 col-lg-4" v-for='interest in interests' :key='interest.title'>
- 					<div class="about-interests__item">
-     					<i :class="interest.icon"></i>
-                	 	<div class="about-interests__desc">
-							<h6>{{interest.title}}</h6>
-           	        	</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-4" v-for='interest in interests' :key='interest.title'>
+				<div class="about-interests__item">
+					<i :class="interest.icon"></i>
+        	 	<div class="about-interests__desc">
+					<h6>{{interest.title}}</h6>
+   	        	</div>
+				</div>
+			</div>
+		</div>
  	</div>
 </template>
 <script>
@@ -60,6 +58,10 @@
 			border-radius: 10px;
 			margin-top: 110px;
 			margin-bottom: 105px;
+			@include md-size-max {
+			  	margin-top: 80px;
+			  	margin-bottom: 40px;
+			  }
 			&__item {
 				position: relative;
 				background: #0e0f10;

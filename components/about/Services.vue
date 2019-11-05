@@ -1,15 +1,13 @@
 <template>
 	<div class="about-services">
-		<div class="container">
-			<div class="row">
-				<div class="col col-12 col-md-6" v-for='service in services' :key='service.title'>
-					<div class="about-services__item">
-						<i :class="service.icon"></i>
-						<h4 class="about-services__item-title">{{service.title}}</h4>
-						<p class="about-services__item-descr">{{service.excerpt}}</p>
-					</div>
-				</div>	
-			</div>
+		<div class="row">
+			<div class="col col-12 col-md-6" v-for='service in services' :key='service.title'>
+				<div class="about-services__item">
+					<i :class="service.icon"></i>
+					<h4 class="about-services__item-title">{{service.title}}</h4>
+					<p class="about-services__item-descr">{{service.excerpt}}</p>
+				</div>
+			</div>	
 		</div>
 	</div>
 </template>
@@ -64,6 +62,14 @@
 		&-services {
 			margin-top: 110px;
 			margin-bottom: 105px;
+			@include md-size-max {
+			  	margin-top: 80px;
+			  	margin-bottom: 60px;
+			}
+			@include sm-size-max {
+			  	margin-top: 80px;
+			  	margin-bottom: 40px;
+			}
 			.col:last-child {
 				margin-left: 25%;
 				@include xs-size-max {
