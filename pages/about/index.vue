@@ -39,7 +39,7 @@
 </script>
 <style lang='scss'>
 	.about {
-		background-color: #0e0f10;
+		background-color: rgba($dark, 0.9);
 		font-family: $secondary-font;
 
 		&-title:first-child {

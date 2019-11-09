@@ -22,7 +22,7 @@
 </script>
 <style lang='scss'>
   .blog {
-    background-color: #0e0f10;
+    background-color: rgba($dark, 0.9);
     &-articles {
       margin-top: 110px;
       @include md-size-max {

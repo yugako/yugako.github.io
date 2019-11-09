@@ -93,7 +93,7 @@
 </script>
 <style lang='scss'>
   .blog-single {
-    background-color: #0e0f10;
+    background-color: rgba($dark, 0.9);
     padding-bottom: 100px;
     &__pagination {
       position: fixed;
