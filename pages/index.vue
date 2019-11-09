@@ -12,12 +12,12 @@
       </div>
      
     </div>
+    
   </section>
 </template>
 
 <script>
 import GButton from '@/components/elements/GButton.vue';
-
 export default {
     name: '',
     head() {

@@ -1,5 +1,5 @@
 <template>
-	<div class="loader" v-if="loading">
+	<div class="loader">
 		<div class="circ" >
 		  <div class="load">Loading . . . </div>
 		  <div class="hands"></div>
@@ -32,9 +32,10 @@
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background-color: $dark;
 		top: 0;
 		left: 0;
+		z-index: 9999;
+		background-color: $dark;
 	}
 	.eye{
 	  width: 20px; height: 8px;
@@ -50,7 +51,7 @@
 	  position: relative;
 	  margin: -250px auto;
 	  width: 80px; height: 80px;
-	  background-color: #111;
+	  background-color: $dark;
 	  border-radius:50px;
 	  box-shadow: inset -4px 2px 0px 0px rgba(240,220,220,1);
 	  -webkit-animation:headAnim 1.5s infinite alternate;
@@ -61,7 +62,7 @@
 	  position: relative;
 	  margin: 90px auto;
 	  width: 140px; height: 120px;
-	  background-color: #111;
+	  background-color: $dark;
 	  border-radius: 50px/25px ;
 	  box-shadow: inset -5px 2px 0px 0px rgba(240,220,220,1);
 	  -webkit-animation:bodyAnim 1.5s infinite alternate;
@@ -84,7 +85,7 @@
 	  -webkit-backface-visibility: hidden;
 	  margin: 60px auto;
 	  width: 180px; height: 180px;
-	  background-color: #111;
+	  background-color: $dark;
 	  border-radius: 0px 0px 50px 50px;
 	  position: relative;
 	  z-index: -1;  
@@ -97,7 +98,7 @@
 	  margin-top: 140px;
 	  width: 120px;height: 120px;
 	  position: absolute;
-	  background-color: #111;
+	  background-color: $dark;
 	  border-radius:20px;
 	  box-shadow:-1px -4px 0px 0px rgba(240,220,220,1);
 	  -webkit-transform:rotate(45deg);
