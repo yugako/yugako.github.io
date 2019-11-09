@@ -28,7 +28,7 @@
         name: 'about',
         components: {
           GTitle, GButton, PersonalInfo, Interests, Services
-        }
+        },
     }
 </script>
 <style lang='scss'>
