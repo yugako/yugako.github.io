@@ -45,7 +45,7 @@ module.exports = {
     height: '5px',
     continuous: true,
     duration: 1500
-  }
+  },
   /*
   ** Generate configuration
   */
