@@ -10,6 +10,13 @@
   import GTitle from '@/components/elements/GTitle';
 
   export default {
+    name: 'Blog',
+    head: {
+      title: 'Blog',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Blog page description' }
+      ],
+    },
     data() {
     	return {
     		pages: null
