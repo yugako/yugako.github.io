@@ -21,10 +21,11 @@
 							I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit. 
 						</p>
 					</div>
+					<g-button external='#' text='Download CV' />
  				</div>
  			</div>
  			<div class="row align-items-center justify-content-center mt-sm-0 mt-md-4">
- 				<div class="column col-12 col-sm-6 col-lg-3" v-for='feature in features' :key='feature.title'>
+ 				<!-- <div class="column col-12 col-sm-6 col-lg-3" v-for='feature in features' :key='feature.title'>
  					<div class="about-person__feature">
  						<i :class="feature.icon"></i>
                  		<div class="about-person__feature-desc">
@@ -32,10 +33,10 @@
                         	<p>{{feature.description}}</p>
                         </div>
  					</div>
- 				</div>
- 				<div class="column col-12 col-sm-6 col-lg-3">
+ 				</div> -->
+ 				<!-- <div class="column col-12 col-sm-6 col-lg-3">
  					<g-button external='#' text='Download CV' />
- 				</div>
+ 				</div> -->
  			</div>
  	</div>
 </template>
@@ -49,14 +50,14 @@
         		features: [
         			{
         				icon: 'fas fa-award',
-        				title: '2+ Years Job',
+        				title: '2+ Work Experience',
         				description: 'Experience'
         			},
-        			{
-        				icon: 'fas fa-certificate',
-        				title: '500+ Projects',
-        				description: 'Completed'
-        			},
+        			// {
+        			// 	icon: 'fas fa-certificate',
+        			// 	title: '500+ Projects',
+        			// 	description: 'Completed'
+        			// },
         			{
         				icon: 'fas fa-user-astronaut',
         				title: 'Freelance',
@@ -106,8 +107,8 @@
 					// 	margin-bottom: 30px;
 					// }
 					@include sm-size-max {
-						width: 200px;
-						height: 200px;
+						width: 150px;
+						height: 150px;
 						display: block;
 						margin: auto;
 						margin-bottom: 20px;

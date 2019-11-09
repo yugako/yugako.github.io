@@ -6,8 +6,11 @@
       <vue-typed-js :typeSpeed="100" :cursorChar="'_'" :showCursor="true" :strings="['Frontend', 'WordPress', 'Frontend & Wordpress Developer']">
         <p class="home-content__subtitle">I'm <span class="typing"></span></p>
       </vue-typed-js>
-
-      <g-button link='/about' text='Want to know more?' />
+      <div class="home-content__buttons">
+          <g-button link='/about' text='Want to know more?' />
+          <g-button external='https://github.com/yugako' text='View My GitHub' />
+      </div>
+     
     </div>
   </section>
 </template>
@@ -85,6 +88,23 @@ export default {
     @include sm-size-max {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      .g-button {
+        display: block;
+        margin-right: 50px;
+      }
+      @include sm-size-max {
+        flex-direction: column;
+        justify-content: center;
+        .g-button {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
   // Here's the meat and potatoes.

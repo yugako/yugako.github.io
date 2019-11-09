@@ -3,7 +3,7 @@
 		<nuxt-link v-if='link'  class="g-button" :to="link">
 	    	{{text}}
 	    </nuxt-link>
-	    <a v-else :href="external" class="g-button">{{text}}</a> 
+	    <a v-else :href="external" target="_blank" class="g-button">{{text}}</a> 
 	</div>
 	
 </template>
