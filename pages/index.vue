@@ -10,14 +10,14 @@
           <g-button link='/about' text='Want to know more?' />
           <g-button external='https://github.com/yugako' text='View My GitHub' />
       </div>
-     
+     <!-- <loader /> -->
     </div>
-    
   </section>
 </template>
 
 <script>
 import GButton from '@/components/elements/GButton.vue';
+import loader from '@/components/elements/Loader.vue';
 export default {
     name: '',
     head() {
@@ -31,13 +31,20 @@ export default {
       }
     },
     components: {
-      GButton
+      GButton, loader
     },
     computed: {
       Expanded() {
         return this.$store.getters.Expanded;
       }
     },
+    mounted () {
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+
+        setTimeout(() => this.$nuxt.$loading.finish(), 1500)
+      })
+    }
   }
 </script>
 

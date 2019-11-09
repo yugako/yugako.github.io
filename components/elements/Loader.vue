@@ -22,9 +22,12 @@
 		      this.loading = true
 		    },
 		    finish () {
-		      this.loading = false
+		    	setTimeout(() => {
+		    		this.loading = false;
+		    	}, 1000)
+		      
 		    }
-		  }
+		},
 	}
 </script>
 <style lang='scss'>
@@ -43,6 +46,7 @@
 	  border-radius:0px 0px 20px 20px;
 	  position: relative;
 	  left: 10px; top: 40px;
+	  z-index: 9999;
 	  box-shadow:  40px 0px 0px 0px rgba(240,220,220,1);              
 	}
 
@@ -56,6 +60,7 @@
 	  box-shadow: inset -4px 2px 0px 0px rgba(240,220,220,1);
 	  -webkit-animation:headAnim 1.5s infinite alternate;
 	  -webkit-animation-timing-function:ease-out;
+	  z-index: 9999;
 	}
 
 	.body{ 
@@ -66,7 +71,8 @@
 	  border-radius: 50px/25px ;
 	  box-shadow: inset -5px 2px 0px 0px rgba(240,220,220,1);
 	  -webkit-animation:bodyAnim 1.5s infinite alternate;
-	  -webkit-animation-timing-function:ease-out;  
+	  -webkit-animation-timing-function:ease-out; 
+	  z-index: 9999; 
 	}
 
 	  @-webkit-keyframes headAnim{
@@ -91,6 +97,7 @@
 	  z-index: -1;  
 	  left: 0%; top: 20%;
 	  overflow: hidden;
+	  z-index: 9999;
 	}
 
 	.hands{
@@ -106,6 +113,7 @@
 	  z-index: 1;
 	  -webkit-animation:bodyAnim 1.5s infinite alternate;
 	  -webkit-animation-timing-function:ease-out;
+	  z-index: 9999;
 	}
 
 	.load{  
@@ -124,6 +132,7 @@
 	  -webkit-animation-timing-function:ease-out;
 	  word-wrap: break-word;
 	  display:block;
+	  z-index: 9999;
 	  overflow: hidden;
 	}
 
