@@ -21,7 +21,8 @@ module.exports = {
   
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/pwa',
   ],
   markdownit: {
     injected: true,
