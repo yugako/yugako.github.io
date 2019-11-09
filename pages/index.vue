@@ -24,6 +24,13 @@ export default {
         script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
       };
     },
+    head: {
+      title: 'Home 🚀',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Home page description' },
+        {hid: 'twitter:image', name: 'twitter:image', content: "https://scontent.flwo3-1.fna.fbcdn.net/v/t1.0-9/70062120_1080218812148837_2300144141662683136_n.jpg?_nc_cat=108&_nc_oc=AQmra2Tc2a1ySBn85D1c8Rlugyin-5yryJKqudTt_roxfc6WGB5YnrUp0la1Ga6lNzU&_nc_ht=scontent.flwo3-1.fna&oh=21740a93001b7821c4b560998b3c56ed&oe=5E216312"}
+      ],
+    },
     data() {
       return {
         

@@ -21,6 +21,7 @@
      
       <div class="blog-single__content" v-html="$md.render(article.body)"></div>
       <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus>
+     
     </div>
   </article>
 </template>
@@ -29,16 +30,34 @@
 
   export default {
     name: 'index',
+    head () {
+      let article = this.article;
+      
+      return {
+        title: `${article.title}`,
+        meta: [
+        {
+          hid: `description`,
+          name: 'description',
+          content: `${article.excerpt}'s public profile at Nuxt.js`
+        }]
+      }
+    },
     async asyncData({ params, payload }) {
-      if (payload) return { article: payload };
-      else
+      if (payload) {
+        return { article: payload };
+      } else {
+
         return {
           article: await require(`~/assets/content/blog/${params.id}.json`),
         };
+      }
+        
       },
     data() {
       return {
         id: this.$route.params.id,
+        pageTitle: this.$route,
       }
     },
     methods: {

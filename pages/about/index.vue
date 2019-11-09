@@ -29,6 +29,12 @@
         components: {
           GTitle, GButton, PersonalInfo, Interests, Services
         },
+        head: {
+	      title: 'About',
+	      meta: [
+	        { hid: 'description', name: 'description', content: 'About page description' }
+	      ],
+	    },
     }
 </script>
 <style lang='scss'>
