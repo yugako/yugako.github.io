@@ -54,8 +54,9 @@
     display: flex;
     width: 100%;
     overflow-y: auto;
-    background-image: url('http://baha.malyarchuk.space/img/home-bg.jpg');
+    background-image: url('../assets/img/coffee_bg.webp');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
@@ -67,7 +68,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba($dark, 0.4);
+        background-color: rgba($dark, 0.55);
         z-index: -1;
     }
     &-view {

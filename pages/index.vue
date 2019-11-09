@@ -4,7 +4,7 @@
       <h1 class="home-content__title glitch" data-text='George Gasyuk'>George Gasyuk</h1>
       
       <vue-typed-js :typeSpeed="100" :cursorChar="'_'" :showCursor="true" :strings="['Frontend', 'WordPress', 'Frontend & Wordpress Developer']">
-        <p class="home-content__subtitle">I'm <span class="typing"></span></p>
+        <p class="home-content__subtitle"><span class="typing"></span></p>
       </vue-typed-js>
       <div class="home-content__buttons">
           <g-button link='/about' text='Want to know more?' />
