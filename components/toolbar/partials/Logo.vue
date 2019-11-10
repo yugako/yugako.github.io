@@ -1,7 +1,7 @@
 <template>
 	<div class='site-logo'>
 		<nuxt-link exact to="/">
-    		GG
+    		<img src="@/assets/img/logo.png">
     	</nuxt-link> 
 	</div>
 </template>
@@ -18,8 +18,11 @@
 <style lang='scss'>
 	.site-logo {
 		display: block;
-		max-width: 70px;
-		max-height: 70px;
+		img {
+			max-width: 70px;
+			max-height: 70px;
+		}
+		
 		color: $accent;
 		padding: 10px;
 		display: flex;

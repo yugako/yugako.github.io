@@ -11,7 +11,7 @@ module.exports = {
 
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700&display=swap' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' },
 
@@ -33,6 +33,11 @@ module.exports = {
       scss: [
           '@/assets/scss/global.scss',
       ]
+  },
+  pwa: {
+    icons: {
+
+    }
   },
 
   /*
