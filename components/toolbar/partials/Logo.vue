@@ -18,8 +18,6 @@
 <style lang='scss'>
 	.site-logo {
 		display: block;
-		width: 70%;
-		height: 70%;
 		max-width: 70px;
 		max-height: 70px;
 		color: $accent;

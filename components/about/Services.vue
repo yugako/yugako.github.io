@@ -1,7 +1,7 @@
 <template>
 	<div class="about-services">
-		<div class="row">
-			<div class="col col-12 col-md-6" v-for='service in services' :key='service.title'>
+		<div class="row-wrapper">
+			<div class="col cl-12 cl-md-6" v-for='service in services' :key='service.title'>
 				<div class="about-services__item">
 					<i :class="service.icon"></i>
 					<h4 class="about-services__item-title">{{service.title}}</h4>
@@ -71,8 +71,8 @@
 			  	margin-bottom: 40px;
 			}
 			.col:last-child {
-				margin-left: 25%;
-				@include xs-size-max {
+				margin-left: 50%;
+				@include sm-size-max {
 					margin-left: 0;
 				}
 			} 

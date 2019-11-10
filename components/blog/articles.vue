@@ -1,7 +1,7 @@
 <template>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-4" v-for='article in blogPosts' :key='article.title'>
+	<div class="grid-wrapper">
+		<div class="row-wrapper">
+			<div class="cl-12 cl-sm-6 cl-lg-4" v-for='article in blogPosts' :key='article.title'>
 				<article class="article">
 				 	<div class="article-img" :style="{backgroundImage: `url(${article.thumbnail})`}"></div>
 

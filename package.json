@@ -1,5 +1,5 @@
 {
-  "name": "personal-nuxt",
+  "name": "GG",
   "version": "1.0.0",
   "description": "Personal website builded by nuxt",
   "author": "G.G",
@@ -15,10 +15,7 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.7",
     "@nuxtjs/pwa": "^3.0.0-beta.19",
-    "contentful": "^7.10.0",
-    "firebase": "^7.2.1",
     "nuxt": "^2.0.0",
-    "nuxt-fire": "^2.3.0",
     "vue-disqus": "^3.0.5",
     "vue-typed-js": "^0.1.2"
   },

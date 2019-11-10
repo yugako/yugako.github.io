@@ -12,13 +12,15 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700&display=swap' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' },
 
     ]
   },
-  
+
+  /*
+  * Modules
+  */
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/markdownit',
@@ -27,26 +29,27 @@ module.exports = {
   markdownit: {
     injected: true,
   },
- 
   styleResources: {
       scss: [
           '@/assets/scss/global.scss',
       ]
   },
+
+  /*
+  * Plugins
+  */
   plugins: [
     '~plugins/vue-typed',
     '~plugins/disqus',
   ],
+
   /*
   ** Customize the progress bar color
   */
-  // loading: { color: '#3B8070' },
   loading: {
-    color: 'blue',
-    height: '5px',
-    continuous: true,
-    duration: 1500
+    color: '#018aac',
   },
+
   /*
   ** Generate configuration
   */
@@ -61,6 +64,7 @@ module.exports = {
       });
     },
   },
+  
   /*
   ** Build configuration
   */

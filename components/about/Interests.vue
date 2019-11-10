@@ -1,7 +1,7 @@
 <template>
 	<div class="about-interests">
-		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-4" v-for='interest in interests' :key='interest.title'>
+		<div class="row-wrapper">
+			<div class="cl-12 cl-sm-6 cl-lg-4" v-for='interest in interests' :key='interest.title'>
 				<div class="about-interests__item">
 					<i :class="interest.icon"></i>
         	 	<div class="about-interests__desc">

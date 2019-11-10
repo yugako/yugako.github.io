@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-    	<div class="container">
+    	<div class="grid-wrapper">
     		<!-- About person -->
 	     	<g-title class='about-title' text='About' />
 	     	<personal-info />
