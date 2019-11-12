@@ -45,6 +45,7 @@ module.exports = {
   plugins: [
     '~plugins/vue-typed',
     '~plugins/disqus',
+    // '~plugins/prism',
   ],
 
   /*

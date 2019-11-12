@@ -10,9 +10,10 @@
            <h1 class="blog-single__header-title">{{article.title}}</h1>
             <span class="blog-single__header-date"><i class="fas fa-calendar-alt"></i>January 06, 2019</span>
         </div>
-       
+        
+        <!-- <prism></prism> -->
         <div class="blog-single__content" v-html="$md.render(article.body)"></div>
-        <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus>
+        <!-- <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus> -->
        
       </div>
     </article>

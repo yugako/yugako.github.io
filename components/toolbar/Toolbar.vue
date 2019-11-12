@@ -45,5 +45,8 @@
 			max-width: 75px;
 			flex: 0 0 75px;
 		}
+		@media (max-height: 500px) {
+			height: 100%;
+		}
 	}
 </style>

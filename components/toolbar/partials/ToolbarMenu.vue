@@ -29,5 +29,8 @@
 				color: $accent;
 			}
 		}
+		@media (max-height: 500px) {
+			margin-bottom: 30px;
+		}
 	}
 </style>
