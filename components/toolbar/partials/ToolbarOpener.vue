@@ -37,10 +37,18 @@
 <style lang='scss'>
 	.toolbar {
 	  	&-active {
-	      	padding-left: 100px;
-		    @include sm-size-max {
-		        padding-left: 75px;
-		    }
+	  		position: relative;
+	      	&::before {
+	      		content: '';
+	      		position: absolute;
+	      		top: 0;
+	      		left: 0;
+	      		width: 100%;
+	      		height: 100%;
+	      		background-color: rgba($dark, 0.6);
+	      		z-index: 8;
+
+	      	}
 	  	}
 	  	&-opener {
 	      	display: none;

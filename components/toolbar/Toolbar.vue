@@ -39,6 +39,7 @@
 		align-items: center;
 		overflow-y: auto;
 		z-index: 10;
+		border-right: 2px solid $white;
 		
 		@include sm-size-max {
 			max-width: 75px;

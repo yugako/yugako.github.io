@@ -1,21 +1,22 @@
 <template>
-  <article class="blog-single">
-    <!-- Posts pagination -->
-    <pagination :prevPost='prevPost' :nextPost='nextPost' />
-    <!-- Post Content -->
-    <div class="blog-single__img" :style='{backgroundImage: `url(${article.thumbnail})`}'></div>
-    <div class="container page-component">
-      
-      <div class="blog-single__header">
-         <h1 class="blog-single__header-title">{{article.title}}</h1>
-          <span class="blog-single__header-date"><i class="fas fa-calendar-alt"></i>January 06, 2019</span>
+ <article class="blog-single">
+      <!-- Posts pagination -->
+      <pagination :prevPost='prevPost' :nextPost='nextPost' />
+      <!-- Post Content -->
+      <div class="blog-single__img" :style='{backgroundImage: `url(${article.thumbnail})`}'></div>
+      <div class="container page-component">
+        
+        <div class="blog-single__header">
+           <h1 class="blog-single__header-title">{{article.title}}</h1>
+            <span class="blog-single__header-date"><i class="fas fa-calendar-alt"></i>January 06, 2019</span>
+        </div>
+       
+        <div class="blog-single__content" v-html="$md.render(article.body)"></div>
+        <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus>
+       
       </div>
-     
-      <div class="blog-single__content" v-html="$md.render(article.body)"></div>
-      <vue-disqus shortname="personal-12" :identifier="article.id" :url="this.id"></vue-disqus>
-     
-    </div>
-  </article>
+    </article>
+  
 </template>
 
 <script>
@@ -136,6 +137,8 @@
       } 
     }
     &__content {
+      padding-left: 15px;
+      padding-right: 15px;
         p {
             color: $white;
             font-family: $secondary-font;
@@ -164,10 +167,10 @@
           background-color: $dark;
           color: $accent;
           padding: 10px;
-          width: 100%;
-          overflow-x: auto;
+          overflow-x: hidden;
           code {
             font-style: monospace;
+            overflow-x: auto;
           }
         }
 

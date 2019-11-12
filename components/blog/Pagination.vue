@@ -39,7 +39,7 @@
 		  border-radius: 20px;
 		  -webkit-box-shadow: 1px 1px 15px 0 rgba(0,0,0,0.15);
 		  box-shadow: 1px 1px 15px 0 rgba(0,0,0,0.15);
-		  z-index: 99;
+		  z-index: 7;
 		  a {
 		    position: relative;
 		    height: 30px;

@@ -74,12 +74,6 @@
     &-view {
       width: 100%;
     }
-    .toolbar-active {
-        padding-left: 100px;
-        @include sm-size-max {
-            padding-left: 75px;
-        }
-    }
   }
 
 
