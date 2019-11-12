@@ -26,7 +26,7 @@
 		max-width: 100px;
 		flex: 0 0 100px;
 		width: 100%;
-		background-color: rgba($dark, .4);
+		background-color: $dark;
 		height: 100vh;
 		position: fixed;
 		top: 0;

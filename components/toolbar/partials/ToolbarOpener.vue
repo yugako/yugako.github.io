@@ -45,23 +45,29 @@
 	  	&-opener {
 	      	display: none;
 	      	position: fixed;
-	      	background-color: rgba($dark, .4);
-	      	width: 40px;
-	      	height: 40px;
-	      	top: 0;
-	      	left: 0px;
+	      	background-color: $dark;
+	      	width: 80px;
+	      	height: 80px;
+	      	top: -40px;
+	      	left: -40px;
 	      	color: $white;
-	      	border: 1px solid $accent;
+	      	border: 2px solid $white;
 	      	font-size: 2rem;
 	      	text-align: center;
 	      	z-index: 99;
 	      	border-radius: 50%;
+	      	z-index: 9;
+	      	$m: &;
 	      	&.menu-active {
-	          	left: 75px;
+	          	left: 40px;
 	          	border-radius: 0%;
+	          	border-bottom-right-radius: 50%;
+	     
+	          
 	      	}
 	      	@include sm-size-max {
 	          	display: block;
+
 	      	}
 
 	      	/* GENERAL STYLES FOR HAMBURGER */
@@ -78,12 +84,15 @@
 	      	    margin-top: 10px;
 	      	    width: 25px;
 	      	    height: 20px;
-	      	    position: relative;
+	      	    position: absolute;
+	      	    bottom: 13px;
+	      	    right: 13px;
+
 	      	    .bar {
 	      	    	padding: 0;
 	      	    	width: 25px;
 	      	    	height: 4px;
-	      	    	background-color: $accent;
+	      	    	background-color: $white;
 	      	    	display: block;
 	      	    	border-radius: 4px;
 	      	    	transition: all 0.4s ease-in-out;
