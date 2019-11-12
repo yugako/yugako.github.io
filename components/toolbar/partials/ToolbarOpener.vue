@@ -37,18 +37,23 @@
 <style lang='scss'>
 	.toolbar {
 	  	&-active {
-	  		position: relative;
-	      	&::before {
-	      		content: '';
-	      		position: absolute;
-	      		top: 0;
-	      		left: 0;
-	      		width: 100%;
-	      		height: 100%;
-	      		background-color: rgba($dark, 0.6);
-	      		z-index: 8;
+	  		padding-left: 100px;
+	  		@include sm-size-max {
+	  			position: relative;
+	  			padding-left: 0;
+		      	&::before {
+		      		content: '';
+		      		position: absolute;
+		      		top: 0;
+		      		left: 0;
+		      		width: 100%;
+		      		height: 100%;
+		      		background-color: rgba($dark, 0.6);
+		      		z-index: 8;
 
-	      	}
+		      	}
+	  		}
+	  		
 	  	}
 	  	&-opener {
 	      	display: none;
@@ -70,8 +75,10 @@
 	          	left: 40px;
 	          	border-radius: 0%;
 	          	border-bottom-right-radius: 50%;
-	     
-	          
+	     		.hamburger {
+	     			right: 15px;
+	     		}
+	         	
 	      	}
 	      	@include sm-size-max {
 	          	display: block;
@@ -90,16 +97,16 @@
 	      	.hamburger {
 	      	    margin: 0 auto;
 	      	    margin-top: 10px;
-	      	    width: 25px;
-	      	    height: 20px;
+	      	    width: 20px;
+	      	    height: 19px;
 	      	    position: absolute;
 	      	    bottom: 13px;
 	      	    right: 13px;
 
 	      	    .bar {
 	      	    	padding: 0;
-	      	    	width: 25px;
-	      	    	height: 4px;
+	      	    	width: 20px;
+	      	    	height: 3px;
 	      	    	background-color: $white;
 	      	    	display: block;
 	      	    	border-radius: 4px;
@@ -112,7 +119,7 @@
 
 		      	.bar2,
 		      	.bar3 {
-		      	    top: 7.5px;
+		      	    top: 8px;
 		      	}
 
 		      	.bar3 {

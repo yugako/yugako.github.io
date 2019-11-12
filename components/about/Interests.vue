@@ -1,7 +1,7 @@
 <template>
 	<div class="about-interests">
-		<div class="row-wrapper">
-			<!-- <div class="cl-12 cl-sm-6 cl-lg-4" v-for='interest in interests' :key='interest.title'>
+		<div class="row">
+			<!-- <div class="col-12 col-sm-6 col-lg-4" v-for='interest in interests' :key='interest.title'>
 				<div class="about-interests__item">
 					<i :class="interest.icon"></i>
         	 	<div class="about-interests__desc">
@@ -9,7 +9,7 @@
    	        	</div>
 				</div>
 			</div> -->
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="music" class="svg-inline--fa fa-music fa-w-16" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -20,7 +20,7 @@
 	   	        	</div>
 				</div>
 			</div>
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="route" class="svg-inline--fa fa-route fa-w-16" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -31,7 +31,7 @@
 	   	        	</div>
 				</div>
 			</div>
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="film" class="svg-inline--fa fa-film fa-w-16" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -42,7 +42,7 @@
 	   	        	</div>
 				</div>
 			</div>
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="table-tennis" class="svg-inline--fa fa-table-tennis fa-w-16" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -53,7 +53,7 @@
 	   	        	</div>
 				</div>
 			</div>
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -64,7 +64,7 @@
 	   	        	</div>
 				</div>
 			</div>
-			<div class="cl-12 cl-sm-6 cl-lg-4">
+			<div class="col-12 col-sm-6 col-lg-4">
 				<div class="about-interests__item">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gamepad" class="svg-inline--fa fa-gamepad fa-w-20" role="img"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">

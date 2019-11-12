@@ -1,7 +1,7 @@
 <template>
 	<div class="about-services">
-		<div class="row-wrapper">
-			<div class="col cl-12 cl-md-6">
+		<div class="row">
+			<div class="col col-12 col-md-6">
 				<div class="about-services__item">
 					<div class="about-services__item-icon">
 						<svg 
@@ -21,7 +21,7 @@
 					<p class="about-services__item-descr">You`ve saw many times these cool sites which don`t reload after going to another page? It`s a SPA? Do you want the same? Just write me.</p>
 				</div>
 			</div>
-			<div class="col cl-12 cl-md-6">
+			<div class="col col-12 col-md-6">
 				<div class="about-services__item">
 					<div class="about-services__item-icon">
 						<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="wordpress-simple" class="svg-inline--fa fa-wordpress-simple fa-w-16" role="img"
@@ -34,7 +34,7 @@
 					<p class="about-services__item-descr">You have a website, but you don`t imagine how change content? So, in this case, you need a content management system and I`ll help you with it</p>
 				</div>
 			</div>
-			<div class="col cl-12 cl-md-6">
+			<div class="col col-12 col-md-6">
 				<div class="about-services__item">
 					<div class="about-services__item-icon">
 						<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="object-ungroup" class="svg-inline--fa fa-object-ungroup fa-w-18" role="img"
@@ -47,7 +47,7 @@
 					<p class="about-services__item-descr">Do you have a design and you don`t know how make it alive? I can help you with this problem.</p>
 				</div>
 			</div>
-			<div class="col cl-12 cl-md-6">
+			<div class="col col-12 col-md-6">
 				<div class="about-services__item">
 					<div class="about-services__item-icon">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cogs" class="svg-inline--fa fa-cogs fa-w-20" role="img"
@@ -60,7 +60,7 @@
 					<p class="about-services__item-descr">Would you like to see your website on the first position in search results? You are in the right place :)</p>
 				</div>
 			</div>
-			<div class="col cl-12 cl-md-6">
+			<div class="col col-12 col-md-6">
 				<div class="about-services__item">
 					<div class="about-services__item-icon">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="medkit" class="svg-inline--fa fa-medkit fa-w-16" role="img"
